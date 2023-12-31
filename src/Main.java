@@ -1,5 +1,5 @@
 class X {
-    //nie ma zawartości
+    //this block of code is empty
     int i = 3;
     int f(){
         return 0;
@@ -24,6 +24,6 @@ public class Main {
         System.out.println(x1.i+" "+x1.f());
         System.out.println("   ...    ");
         System.out.println(x.i+" "+x.f());
-        //Musi być 3 3
+        //Must be 3 3
     }
 }
