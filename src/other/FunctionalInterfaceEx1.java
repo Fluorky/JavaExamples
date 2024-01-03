@@ -2,7 +2,7 @@ package other;
 
 import java.util.Arrays;
 
-@FunctionalInterface
+@FunctionalInterface //not needed
 interface Sorting {
     void sort(int[] array);
 }
