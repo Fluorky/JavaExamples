@@ -62,6 +62,7 @@
         public static void main(String[] args) {
             // Creating an instance of the Movie class
             Cinema movie = new Movie("Example Cinema", 3, "Sample Movie", 120);
+            //Movie cinema = new Cinema("XD",213); wrong
 
             // Displaying information using the overridden displayInfo() method
             movie.displayInfo();

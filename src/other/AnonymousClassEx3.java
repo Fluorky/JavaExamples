@@ -14,5 +14,8 @@ public class AnonymousClassEx3 {
         };
 
         task.execute();
+
+        Task test = ()->System.out.print("TEST");
+        test.execute();
     }
 }

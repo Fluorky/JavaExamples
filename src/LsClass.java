@@ -53,6 +53,6 @@ public class LsClass {
         L11111 l11111Instance = new L11111(123, "Sample Description");
 
         // Displaying information using the overridden displayInfo() method
-        //l11111Instance.displayInfo();
+       // l11111Instance.displayInfo();
     }
 }
