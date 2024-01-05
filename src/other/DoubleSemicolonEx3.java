@@ -8,6 +8,9 @@ public class DoubleSemicolonEx3 {
         Consumer<String> printUpperCase = System.out::println;
 
         String message = "hello";
+
+        printUpperCase.accept(message);
+
         printUpperCase.accept(message.toUpperCase());
     }
 }

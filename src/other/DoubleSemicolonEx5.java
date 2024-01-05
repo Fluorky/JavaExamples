@@ -15,5 +15,8 @@ public class DoubleSemicolonEx5 {
         names.stream()
                 .map(stringLength)
                 .forEach(System.out::println);
+
+        names.stream().forEach(System.out::print); // stream() is not necessary
+        names.forEach(System.out::println);
     }
 }

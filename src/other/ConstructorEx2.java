@@ -1,5 +1,7 @@
 package other;
 
+import java.util.Objects;
+
 interface Product {
     void getInfo();
 }
@@ -34,7 +36,9 @@ public class ConstructorEx2 {
         Product productA = ProductFactory.createProduct("A");
         Product productB = ProductFactory.createProduct("B");
 
+        Objects.requireNonNull(productA).getInfo();
         productA.getInfo();
+        Objects.requireNonNull(productB).getInfo();
         productB.getInfo();
     }
 }
