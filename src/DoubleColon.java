@@ -15,9 +15,9 @@
 
     // SecondClass class extending FirstClass
     class SecondClass extends FirstClass {
-        /*public void g(MyFunctionalInterface f) {
-            f.something();
-        }*/
+//      /*public static void g(MyFunctionalInterface f) {
+//            f.something();
+//      }*/
         public void g(MyFunctionalInterface f) {
             f.something();
         }
@@ -28,6 +28,7 @@
         public static void main(String[] args) {
             //was
             //g(Fisrtclass::doSomething);
+
 
             // Creating an instance of SecondClass
             SecondClass secondInstance = new SecondClass();

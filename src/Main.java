@@ -24,6 +24,10 @@ public class Main {
         System.out.println(x1.i+" "+x1.f());
         System.out.println("   ...    ");
         System.out.println(x.i+" "+x.f());
+        System.out.println("   ...    ");
+        Y y = new Y();
+        System.out.println("   ...    ");
+        System.out.println(y.i+" "+y.f());
         //Must be 3 3
     }
 }

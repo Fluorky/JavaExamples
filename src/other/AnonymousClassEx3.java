@@ -15,6 +15,8 @@ public class AnonymousClassEx3 {
 
         task.execute();
 
+        //lambda solution
+
         Task test = ()->System.out.print("TEST");
         test.execute();
     }

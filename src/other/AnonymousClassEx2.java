@@ -9,7 +9,7 @@ public class AnonymousClassEx2 {
         Processor lambdaProcessor = data -> System.out.println("Processing data: " + data);
 
         Processor anonymousClassProcessor = new Processor() {
-            @Override
+            //@Override //not necessary
             public void processData(String data) {
                 System.out.println("Processing data differently: " + data);
             }

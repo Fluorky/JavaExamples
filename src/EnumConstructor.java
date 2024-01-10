@@ -6,6 +6,14 @@ enum Size {
     LARGE(40,"The size is large."),
     EXTRALARGE(50,"The size is extra large.");
 
+
+    //Solution number one
+    /*private Size(int size, String pizzaSize) {
+
+    }*/
+
+    //Solution number two (full working)
+
     private final String pizzaSize;
     private final int size;
 
