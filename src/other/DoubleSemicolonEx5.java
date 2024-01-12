@@ -17,6 +17,7 @@ public class DoubleSemicolonEx5 {
                 .forEach(System.out::println);
 
         names.stream().forEach(System.out::print); // stream() is not necessary
+        System.out.println("\n-------------");
         names.forEach(System.out::println);
     }
 }

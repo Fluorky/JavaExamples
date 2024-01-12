@@ -12,6 +12,10 @@ public class FunctionalInterfaceEx2 {
 
         Operation sumOfSquares = (x, y) -> Math.pow(addition.execute(x, y), 2);
 
+        Operation multiplicationOfSquares = (x, y) -> Math.pow(multiplication.execute(x, y), 2);
+
         System.out.println("Result of sumOfSquares: " + sumOfSquares.execute(2, 3));
+
+        System.out.println("Result of multiplicationOfSquares: " + multiplicationOfSquares.execute(2, 3));
     }
 }

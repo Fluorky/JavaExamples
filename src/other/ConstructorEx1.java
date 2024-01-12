@@ -23,6 +23,6 @@ public class ConstructorEx1 {
         System.out.println("Name: " + child.name + ", Age: " + child.age);
 
         Parent parent = new Child("John", 5);
-        System.out.println("Name: " + parent.name + ", Age: " );//+ parent.age);
+        System.out.println("Name: " + parent.name + ", Age: " );//+ parent.age); // commented code don't work
     }
 }
