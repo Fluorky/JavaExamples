@@ -22,16 +22,25 @@ class L1111 {
 class L11111 extends L1111 {
     private String description;
 
-    public L11111(int number, String description) {
+   /* public L11111(int number, String description) {
 
        super(number);
        this.description = description; //this line is not necessary
 
-    }
+    }*/
     //why this code don't work
     /*public L11111() {
 
     }*/
+    public L11111() {
+        super(131);
+    }
+    /*public L11111(int number){
+        super(number);
+
+
+    }*/
+
 
 
     //unnecessary code
@@ -52,21 +61,22 @@ class L11111 extends L1111 {
 public class LsClass {
     public static void main(String[] argsda) {
         // Creating an instance of the L11111 class
-        L1111 l11111Instance = new L11111(123, "Sample Description");
+        //L1111 l11111Instance = new L11111(123, "Sample Description");
+        //L1111 l11111Instance = new L11111();
 
-        L11111 l1111Instance = new L11111(1234, "Description");
+        //L11111 l1111Instance = new L11111(1234, "Description");
 
-        L1111 l111Instance2 = new L1111(1234);
+        //L1111 l111Instance2 = new L1111(1234);
 
-        //L11111 l1111Instance2 = new L1111(12345); wrong
+        L11111 l1111Instance2 = new L11111();// wrong
 
 
         // Displaying information using the overridden displayInfo() method
-        l11111Instance.displayInfo();
+       // l11111Instance.displayInfo();
         System.out.println("--------------");
-        l1111Instance.displayInfo();
+        //l1111Instance.displayInfo();
         System.out.println("--------------");
-        l111Instance2.displayInfo();
+        //l111Instance2.displayInfo();
 
     }
 }

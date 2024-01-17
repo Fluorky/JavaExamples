@@ -1,7 +1,9 @@
 
 //in another one there was :: and why doesn't the call g(f::something) work and probably with inheritance
 
-    @FunctionalInterface
+import java.util.function.Consumer;
+
+@FunctionalInterface
     interface MyFunctionalInterface {
         void something();
     }
@@ -15,13 +17,14 @@
 
     // SecondClass class extending FirstClass
     class SecondClass extends FirstClass {
-//      /*public static void g(MyFunctionalInterface f) {
-//            f.something();
-//      }*/
-        public void g(MyFunctionalInterface f) {
+    public static void g(MyFunctionalInterface f) {
+           f.something();
+     }
+       /* public void g(MyFunctionalInterface f) {
             f.something();
-        }
+        }*/
     }
+
 
     // Example usage
     public class DoubleColon {
@@ -32,6 +35,9 @@
 
             // Creating an instance of SecondClass
             SecondClass secondInstance = new SecondClass();
+
+            SecondClass.g(FirstClass::doSomething);
+
 
             // Using the g method with a method reference to FirstClass's doSomething method
             secondInstance.g(FirstClass::doSomething);
