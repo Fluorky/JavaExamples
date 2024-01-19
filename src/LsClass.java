@@ -20,6 +20,14 @@ class L1111 {
 
 // L11111 class extending L1111
 class L11111 extends L1111 {
+
+    //why this code don't work
+
+
+    // solution number one
+    /*public L11111() {
+        super(1);
+    }*/
     private String description;
 
     public L11111(int number, String description) {
@@ -28,13 +36,8 @@ class L11111 extends L1111 {
        this.description = description; //this line is not necessary
 
     }
-    //why this code don't work
-    /*public L11111() {
 
-    }*/
-
-
-    //unnecessary code
+    //example code, but not needed
     public String getDescription() {
         return description;
     }

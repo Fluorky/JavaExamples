@@ -21,6 +21,7 @@
         public void g(MyFunctionalInterface f) {
             f.something();
         }
+
     }
 
     // Example usage
@@ -35,6 +36,9 @@
 
             // Using the g method with a method reference to FirstClass's doSomething method
             secondInstance.g(FirstClass::doSomething);
+
+            //When use static method g you can use this line below
+            //SecondClass.g(FirstClass::doSomething);
 
             // Using the g method with a lambda expression
             secondInstance.g(() -> System.out.println("Lambda expression is doing something."));

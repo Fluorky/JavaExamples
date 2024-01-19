@@ -6,9 +6,9 @@
         private String name;
         private int numberOfScreens;
 
-        public Cinema() {
+        /*public Cinema() {
 
-        }
+        }*/
         public Cinema(String name, int numberOfScreens) {
             this.name = name;
             this.numberOfScreens = numberOfScreens;
