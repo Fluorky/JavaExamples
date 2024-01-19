@@ -17,17 +17,17 @@ class Y extends X {
 }
 public class Main {
     public static void main(String[] args) {
-        X x1 = new X();
+       // X x1 = new X();
         System.out.println("   ...    ");
         X x = new Y();
         System.out.println("   ...    ");
-        System.out.println(x1.i+" "+x1.f());
+        //Y y = new Y();
+        System.out.println("   *...*    ");
+        //System.out.println(x1.i+" "+x1.f());
         System.out.println("   ...    ");
         System.out.println(x.i+" "+x.f());
         System.out.println("   ...    ");
-        Y y = new Y();
-        System.out.println("   ...    ");
-        System.out.println(y.i+" "+y.f());
+        //System.out.println(y.i+" "+y.f());
         //Must be 3 3
     }
 }
