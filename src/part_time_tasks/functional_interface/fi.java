@@ -30,12 +30,15 @@ public class fi {
 
         // Wyrażenie lambda dla "count_greater"
         MatchingCounter<Integer> lambdaExpression = (array, target) ->
-                (int) Arrays.stream(array).filter(target::equals).count();
-        Integer[] intArray = {1, 2, 3, 2, 4, 2, 5};
+            (int) Arrays.stream(array).filter(e -> e > target).count();
+
+        Integer[] intArray = {1, 2, 3, 5, 4, 2, 5};
         int targetInteger = 2;
         int resultFromLambdaExpression = lambdaExpression.countMatching(intArray, targetInteger);
         System.out.println("Count using lambda expression: " + resultFromLambdaExpression);
+
     }
+
 
 
 }
