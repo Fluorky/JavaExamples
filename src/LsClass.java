@@ -52,9 +52,9 @@ class L11111 extends L1111 {
 public class LsClass {
     public static void main(String[] argsda) {
         // Creating an instance of the L11111 class
-        L1111 l11111Instance = new L11111(123, "Sample Description");
+        L11111 l11111Instance = new L11111(123, "Sample Description");
 
-        L11111 l1111Instance = new L11111(1234, "Description");
+        L1111 l1111Instance = new L11111(1234, "Description");
 
         L1111 l111Instance2 = new L1111(1234);
 
