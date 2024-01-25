@@ -10,4 +10,9 @@ class o30 extends o20{
     o30(int o){
         super(o);
     }
+    //or
+    o30(){
+        super(21);
+    }
+
 }

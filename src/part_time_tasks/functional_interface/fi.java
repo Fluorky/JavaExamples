@@ -38,6 +38,17 @@ public class fi {
         int resultFromLambdaExpression = lambdaExpression.countMatching(intArray, targetInteger);
         System.out.println("Count using lambda expression: " + resultFromLambdaExpression);
 
+
+        //anonymous class
+        MatchingCounter<Integer> anonymousClass = new MatchingCounter<Integer>() {
+            @Override
+            public int countMatching(Integer[] array, Integer target) {
+                return (int) Arrays.stream(array).filter(e-> e < target).count();
+            }
+        };
+        int test = anonymousClass.countMatching(intArray,targetInteger);
+        System.out.println("Count using anonymous class " + test);
+
     }
 
 
