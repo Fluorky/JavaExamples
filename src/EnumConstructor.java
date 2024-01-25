@@ -13,9 +13,9 @@ enum Size {
     }
 
     //Solution number two (full working)
-
-   /* private final String pizzaSize;
-    private final int size;
+    /*
+    String pizzaSize;
+    int size;
 
     // private enum constructor
     private Size(int size, String pizzaSize) {
@@ -23,7 +23,7 @@ enum Size {
         this.size = size;
     }
 
-    public String getSize() {
+    /*public String getSize() {
         return pizzaSize;
     }
     public int getSizeCm()
@@ -35,6 +35,6 @@ enum Size {
 class EnumConstructor {
     public static void main(String[] args) {
         Size size = Size.SMALL;
-       // System.out.println(size.getSize()+" " + size.getSizeCm());
+        //System.out.println(size.getSize()+" " + size.getSizeCm());
     }
 }

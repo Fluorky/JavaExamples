@@ -1,6 +1,6 @@
 package part_time_tasks.EE_k2_two_colons;
 
-@FunctionalInterface
+//@FunctionalInterface
 interface I {
     void f();
 }

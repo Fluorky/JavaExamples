@@ -21,21 +21,33 @@ public class fi {
         return (int) Arrays.stream(array).filter(target::equals).count();
     }
     public static void main(String[] args) {
-        // Referencja do metody
-        MatchingCounter<String> methodReference = fi::countMatching;
+
         String[] stringArray = {"apple", "orange", "banana", "apple", "grape"};
         String targetString = "apple";
+        // Referencja do metody
+        MatchingCounter<String> methodReference = fi::countMatching;
         int resultFromMethodReference = methodReference.countMatching(stringArray, targetString);
         System.out.println("Count using method reference: " + resultFromMethodReference);
 
-        // Wyrażenie lambda dla "count_greater"
-        MatchingCounter<Integer> lambdaExpression = (array, target) ->
-            (int) Arrays.stream(array).filter(e -> e > target).count();
-
         Integer[] intArray = {1, 2, 3, 5, 4, 2, 5};
         int targetInteger = 2;
+        // Wyrażenie lambda dla "count_greater"
+        MatchingCounter<Integer> lambdaExpression = (array, target) ->
+           (int) Arrays.stream(array).filter(e -> e > target).count();
+
         int resultFromLambdaExpression = lambdaExpression.countMatching(intArray, targetInteger);
         System.out.println("Count using lambda expression: " + resultFromLambdaExpression);
+
+
+        //anonymous class
+        MatchingCounter<Integer> anonymousClass = new MatchingCounter<Integer>() {
+            @Override
+            public int countMatching(Integer[] array, Integer target) {
+                return (int) Arrays.stream(array).filter(e-> e < target).count();
+            }
+        };
+        int test = anonymousClass.countMatching(intArray,targetInteger);
+        System.out.println("Count using anonymous class " + test);
 
     }
 
